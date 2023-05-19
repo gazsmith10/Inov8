@@ -1,0 +1,7 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/App/etc/routes.xsd">
+    <router id="standard">
+        <route id="inov8_interview" frontName="inov8_interview">
+            <module name="Inov8_Interview" />
+        </route>
+    </router>
+</config>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+<event name="checkout_onepage_controller_success_action">
+    <observer name="inov8_interview_controller_success_action" instance="Inov8\Interview\Observer\OrderSuccessObserver"  />
+</event>
+</config>

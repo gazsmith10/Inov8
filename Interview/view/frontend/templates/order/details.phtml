@@ -1,0 +1,25 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Email</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php $orderDetailsCollection = $block->getOrderDetailsCollection(); ?>
+        <?php foreach ($orderDetailsCollection as $orderDetails) : ?>
+            <tr>
+                <td><?= $orderDetails->getId(); ?></td>
+                <td><?= $orderDetails->getEmail(); ?></td>
+                <td><?= $orderDetails->getFirstName(); ?></td>
+                <td><?= $orderDetails->getLastName(); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+
+ <?php if ($block->getPagerHtml()): ?>
+    <div class="order-products-toolbar toolbar bottom"><?php echo $block->getPagerHtml(); ?></div>
+ <?php endif ?>
